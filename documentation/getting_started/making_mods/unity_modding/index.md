@@ -111,4 +111,5 @@ This is used if you want to export to be able to import in blender or other cad 
 3. Look at existing buildings to see what components is needed for some functions
 4. Block Object Nav Mesh Settings need to have "Generate Floors on Stackable" enabled to link path to stuff built on top of building
 
-    
+### Modeling:
+1. When exporting FBX files it also exports Textures but when importing of any change in example Blender is done it may be need of    replace texture and in blender it is good practice to change name of texture so its easy to find correct textures.    
