@@ -15,6 +15,11 @@ parent: Making Mods
 1. TOC
 {:toc}
 
+## Common Problem:
+* Import window:  
+    When this window is working it may take some time.  
+    it may Crash and need to be Force closed and opened again and thats normal when changing version or adding alot of new assets or settings.  
+    meaning if its stuck importing on one package over 1-2 min then shut it down with taskmanager.
 
 ## Find version of unity
 
@@ -43,34 +48,59 @@ at writing 2021.3.1f1 is know to work
 ### Steps to Import game Scripts
 1. Change version to use Thunderkit version. (Click on version in column and select the correct one)
 1. It will then Open the project, warning may show about version and just click continue
-    * this may take some time.
-    * it may Crash and need to be closed and opened again and thats normal when changing version or adding alot of new assets.  
-    meaning if its stuck importing on one package over 1-2 min then shut it down with taskmanager.
+
 1. Wait for Editor to open
     * if question about Safe mode is shown select  
     if it does press exit safe mode in the top left corner
 1. ThunderKit settings window should now show else its found:  
     ![Thunderkit](/assets/images/assetripper/thunderkit.png)  
+    * When you have the thunderkit window open you can click on Show at startup to have it hidden as default.
 1. Select thunderkit settings and browse for the timberborn.exe and press import  
 ![Thunderkit](/assets/images/assetripper/thunderkit_import.png)  
-    * this may take some time to import settings
-    * it may Crash and need to be closed and opened again and thats normal when changing version or adding alot of new assets.  
-    meaning if its stuck importing on one package over 1-2 min then shut it down with taskmanager.
-    * When you have the thunderkit window open you can click on Show at startup to have it hidden as default.
+    
+    
 
 ## Modding Setup:   
-1. close the project and change version to modding version as described above.
+1. Close the project and change version to modding version as described above.
 1. It will then Open the project, warning may show about version and just click continue
-    * it may Crash and need to be closed and opened again and thats normal when changing version or adding alot of new assets.  
-    meaning if its stuck importing on one package over 1-2 min then shut it down with taskmanager.
-1. Wait for Editor to open
-    * if question about Safe mode is shown select  
+1. Wait for Editor to open, This may take some time
+    * If question about Safe mode is shown select  
     if it does press exit safe mode in the top left corner 
 1. Try open Assets/Frog statue/FrogStatue.Folktails it should now show settings for the prefab example prefab name.
     * if it does not redo the [Thunderkit](#steps-to-import-game-scripts)
-1. up Top you have shortcuts to select mod and action do execute if non is shown:  
+1. Up Top you have shortcuts to select mod and action do execute if non is shown:  
 "image"
     1. Open Assets/Rebuild and Launch and uncheck and check Quick Access
     1. do the same for any mods manifests
 1. you should now be able to select Rebuild and a mod in the list and press Execute to launch the game with that mod.
     * even if it will crash because textures and meshes are missing.       
+
+## Update or add mod to Unity launch
+1. Download mod to update or add
+1. Open Packages\BepInExPack_Timberborn\BepInExPack_Timberborn\BepInEx\plugins
+1. Remove if mod folder if it already exists
+1. Copy downloaded mod to the folder
+1. next time you Open the project, it will import the mod, This may take some time
+
+## Export/Import package
+This can be used to transfer assets from Assetripped game to your mods project
+1. Select any amount of assets and right click and select Export package
+2. To import it in the next one right click in project view and select Import package/Custom package
+
+## Export/Import FBX files
+This is used if you want to export to be able to import in blender or other cad programs.  
+### Install Plugin
+1. open Packet manager  under Window 
+2. Search for FBX and install FBX Exporter
+3. Open Project settings under Edit
+4. Select FBX Export and change Export Path to your liking
+5. And change Export format to Binary
+### Export File
+1. open a Asset you want to export from 
+2. Select what you want to export in the hierarchy view
+3. right click an select Export to FBX
+### Import File
+1. Before you use a new file select the FBX file and Enable read/Write under Model/Meshes
+1. Files can then be dragged in to any asset and used
+
+    
