@@ -103,4 +103,12 @@ This is used if you want to export to be able to import in blender or other cad 
 1. Before you use a new file select the FBX file and Enable read/Write under Model/Meshes
 1. Files can then be dragged in to any asset and used
 
+
+## Good to know stuff
+### Components:
+1. Box Collider, Capsule Collider is some example of a typ of component used on _Finished/_Unfinished/Part to specify if building should be selected when clicked on an location.
+2. Cluster Element Specification is if building should be connected and share power and what position
+3. Look at existing buildings to see what components is needed for some functions
+4. Block Object Nav Mesh Settings need to have "Generate Floors on Stackable" enabled to link path to stuff built on top of building
+
     
