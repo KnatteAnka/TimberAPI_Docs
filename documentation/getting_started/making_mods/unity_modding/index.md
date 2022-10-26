@@ -26,7 +26,7 @@ parent: Making Mods
 ### Thunderkit
 To find the right version Find the Timberborn.exe and look at property's for it.   
 there Filevesion is show thats the version of Unity Thunderkit will need.   
-at writing its 2022.1.6f1 is know to work
+at writing 2022.1.6f1 is know to work
 
 ### Mod unity version
 this will depend on what version timberAPI uses.  
