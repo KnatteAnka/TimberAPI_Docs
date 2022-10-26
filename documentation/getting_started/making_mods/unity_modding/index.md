@@ -34,7 +34,7 @@ at writing 2021.3.1f1 is know to work
 
 
 ## Instalation
-1. Download [MinimalModSetup](https://github.com/KnatteAnka/MinimalModSetup)  
+1. Download Zip [MinimalModSetup](https://github.com/KnatteAnka/MinimalModSetup)  
 1. Install [UnityHub](https://unity3d.com/get-unity/download)
 1. Open Unityhub/Installs and Click "Install Editor"
 1. Select Archive and click download archive and find the versions from above and install those
