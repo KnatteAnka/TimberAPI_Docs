@@ -19,7 +19,8 @@ parent: Making Mods
 * Import window:  
     When this window is working it may take some time.  
     It may Crash and need to be force closed and opened again and thats normal when changing version or adding alot of new assets or settings.  
-    Meaning if its stuck importing on one package over 1-2 min then shut it down with taskmanager.
+    Meaning if its stuck importing on one package over 1-2 min then shut it down with taskmanager.  
+    ![Import Window](/assets/images/Unity_Import.png)  
 
 ## Find version of unity
 
