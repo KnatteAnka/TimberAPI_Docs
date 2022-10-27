@@ -18,19 +18,19 @@ parent: Making Mods
 ## Common Problem:
 * Import window:  
     When this window is working it may take some time.  
-    it may Crash and need to be Force closed and opened again and thats normal when changing version or adding alot of new assets or settings.  
-    meaning if its stuck importing on one package over 1-2 min then shut it down with taskmanager.
+    It may Crash and need to be force closed and opened again and thats normal when changing version or adding alot of new assets or settings.  
+    Meaning if its stuck importing on one package over 1-2 min then shut it down with taskmanager.
 
 ## Find version of unity
 
 ### Thunderkit
-To find the right version Find the Timberborn.exe and look at property's for it.   
-there Filevesion is show thats the version of Unity Thunderkit will need.   
-at writing 2022.1.6f1 is know to work
+To find the right version, find the Timberborn.exe and look at property's for it.   
+The Filevesion is shows which version of Unity Thunderkit will need.   
+At writing 2022.1.6f1 is known to work
 
 ### Mod unity version
-this will depend on what version timberAPI uses.  
-at writing 2021.3.1f1 is know to work
+This will depend on what version timberAPI uses.  
+At writing 2021.3.1f1 is known to work
 
 
 ## Instalation
@@ -50,8 +50,8 @@ at writing 2021.3.1f1 is know to work
 1. It will then Open the project, warning may show about version and just click continue
 
 1. Wait for Editor to open
-    * if question about Safe mode is shown select  
-    if it does press exit safe mode in the top left corner
+    * If question about Safe mode is shown select.  
+    If it does press exit safe mode in the top left corner
 1. ThunderKit settings window should now show else its found:  
     ![Thunderkit](/assets/images/assetripper/thunderkit.png)  
     * When you have the thunderkit window open you can click on Show at startup to have it hidden as default.
@@ -64,15 +64,15 @@ at writing 2021.3.1f1 is know to work
 1. Close the project and change version to modding version as described above.
 1. It will then Open the project, warning may show about version and just click continue
 1. Wait for Editor to open, This may take some time
-    * If question about Safe mode is shown select  
-    if it does press exit safe mode in the top left corner 
+    * If question about Safe mode is shown select.  
+    If it does press exit safe mode in the top left corner 
 1. Try open Assets/Frog statue/FrogStatue.Folktails it should now show settings for the prefab example prefab name.
     * if it does not redo the [Thunderkit](#steps-to-import-game-scripts)
 1. Up Top you have shortcuts to select mod and action do execute if non is shown:  
 "image"
     1. Open Assets/Rebuild and Launch and uncheck and check Quick Access
-    1. do the same for any mods manifests
-1. you should now be able to select Rebuild and a mod in the list and press Execute to launch the game with that mod.
+    1. Do the same for any mods manifests
+1. You should now be able to select Rebuild and a mod in the list and press Execute to launch the game with that mod.
     * even if it will crash because textures and meshes are missing.       
 
 ## Update or add mod to Unity launch
@@ -89,16 +89,19 @@ This can be used to transfer assets from Assetripped game to your mods project
 
 ## Export/Import FBX files
 This is used if you want to export to be able to import in blender or other cad programs.  
+
 ### Install Plugin
-1. open Packet manager  under Window 
+1. Open Packet manager under Window 
 2. Search for FBX and install FBX Exporter
 3. Open Project settings under Edit
 4. Select FBX Export and change Export Path to your liking
 5. And change Export format to Binary
+
 ### Export File
-1. open a Asset you want to export from 
+1. Open an/the Asset you want to export 
 2. Select what you want to export in the hierarchy view
-3. right click an select Export to FBX
+3. Right click an select Export to FBX
+
 ### Import File
 1. Before you use a new file select the FBX file and Enable read/Write under Model/Meshes
 1. Files can then be dragged in to any asset and used
@@ -106,7 +109,7 @@ This is used if you want to export to be able to import in blender or other cad 
 
 ## Good to know stuff
 ### Components:
-1. Box Collider, Capsule Collider is some example of a typ of component used on _Finished/_Unfinished/Part to specify if building should be selected when clicked on an location.
+1. Box Collider and Capsule Collider are examples of a component type used on _Finished/_Unfinished/Part to specify if building should be selected when clicked on an location.
 2. Cluster Element Specification is if building should be connected and share power and what position
 3. Look at existing buildings to see what components is needed for some functions
 4. Block Object Nav Mesh Settings need to have "Generate Floors on Stackable" enabled to link path to stuff built on top of building
