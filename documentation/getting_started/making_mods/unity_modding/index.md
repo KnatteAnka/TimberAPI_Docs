@@ -87,7 +87,8 @@ At writing 2021.3.1f1 is known to work
 
 ## Export/Import package
 This can be used to transfer assets from Assetripped game to your mods project  
-[Exporting Game Files](/getting_started/making_mods/exporting_game_files/index.md)
+[Exporting Game Files](/making_mods/exporting_game_files/)
+[]()
 1. Select any amount of assets and right click and select Export package
 2. To import it in the next one right click in project view and select Import package/Custom package
 
