@@ -51,8 +51,8 @@ At writing 2021.3.1f1 is known to work
 1. It will then Open the project, warning may show about version and just click continue
 
 1. Wait for Editor to open
-    * If question about Safe mode is shown select.  
-    If it does press exit safe mode in the top left corner
+    * If question about Safe mode is shown select "Enter Safe Mode".
+    * If it does press exit safe mode in the top left corner 
 1. ThunderKit settings window should now show else its found:  
     ![Thunderkit](/assets/images/assetripper/thunderkit.png)  
     * When you have the thunderkit window open you can click on Show at startup to have it hidden as default.
@@ -65,31 +65,34 @@ At writing 2021.3.1f1 is known to work
 1. Close the project and change version to modding version as described above.
 1. It will then Open the project, warning may show about version and just click continue
 1. Wait for Editor to open, This may take some time
-    * If question about Safe mode is shown select.  
-    If it does press exit safe mode in the top left corner 
-1. Try open Assets/Frog statue/FrogStatue.Folktails it should now show settings for the prefab example prefab name.
-    * if it does not redo the [Thunderkit](#steps-to-import-game-scripts)
-1. Up Top you have shortcuts to select mod and action do execute if non is shown:  
-"image"
+    * If question about Safe mode is shown select "Enter Safe Mode".  
+    * If it does press exit safe mode in the top left corner 
+1. Try open Assets/StorageBox/StorageBox it should now show settings for the prefab example prefab name.
+    * If it does not redo the [Thunderkit](#steps-to-import-game-scripts)
+1. Up top you have shortcuts to action and select mod to execute  
+    If none is shown:  
+![](/assets/images/unity_selectmod.png)
     1. Open Assets/Rebuild and Launch and uncheck and check Quick Access
-    1. Do the same for any mods manifests
-1. You should now be able to select Rebuild and a mod in the list and press Execute to launch the game with that mod.
-    * even if it will crash because textures and meshes are missing.       
+    1. Any mods not showing up open there Manifests and uncheck and check Quick Access
+    
+1. You should now be able to select the Action Rebuild and a mod in the dropdown list and press Execute to launch the game with that mod.
+           
 
 ## Update or add mod to Unity launch
 1. Download mod to update or add
 1. Open Packages\BepInExPack_Timberborn\BepInExPack_Timberborn\BepInEx\plugins
-1. Remove if mod folder if it already exists
+1. Remove the mod folder if it already exists
 1. Copy downloaded mod to the folder
-1. next time you Open the project, it will import the mod, This may take some time
+1. Next time you Open the project, it will import the mod, this may take some time
 
 ## Export/Import package
-This can be used to transfer assets from Assetripped game to your mods project
+This can be used to transfer assets from Assetripped game to your mods project  
+[Exporting Game Files](/getting_started/making_mods/exporting_game_files/index.md)
 1. Select any amount of assets and right click and select Export package
 2. To import it in the next one right click in project view and select Import package/Custom package
 
 ## Export/Import FBX files
-This is used if you want to export to be able to import in blender or other cad programs.  
+This is used if you want to export to blender or other cad programs.  
 
 ### Install Plugin
 1. Open Packet manager under Window 
@@ -110,10 +113,11 @@ This is used if you want to export to be able to import in blender or other cad 
 
 ## Good to know stuff
 ### Components:
-1. Box Collider and Capsule Collider are examples of a component type used on _Finished/_Unfinished/Part to specify if building should be selected when clicked on an location.
+1. Box Collider and Capsule Collider are examples of a component type used on _Finished/_Unfinished/Part to specify, if building should be selected when clicked on an location.
 2. Cluster Element Specification is if building should be connected and share power and what position
 3. Look at existing buildings to see what components is needed for some functions
 4. Block Object Nav Mesh Settings need to have "Generate Floors on Stackable" enabled to link path to stuff built on top of building
 
 ### Modeling:
-1. When exporting FBX files it also exports Textures but when importing of any change in example Blender is done it may be need of    replace texture and in blender it is good practice to change name of texture so its easy to find correct textures.    
+1. When exporting FBX files it also exports Textures but when importing if any changes in texture settings in example Blender is done it may be need of replace texture with original.
+One way to help with that is in blender is to change name of texture so its easier to find correct textures.    
