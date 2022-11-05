@@ -45,14 +45,16 @@ At writing 2021.3.1f1 is known to work
 1. Open Unityhub/Projects and press Open and select folder from above
 
 ## Thunderkit setup:
-
+### Preperation 
+Install [Git Client](https://git-scm.com/download/win)
+* After installing the Git Client, you will need to exit Unity and the Unity Hub.
 ### Steps to Import game Scripts
-1. Change version to use Thunderkit version. (Click on version in column and select the correct one)
+1. Change version to use Thunderkit version. (Click on version in column and select the correct one) See [Thunderkit](#thunderkit) how to get it.
 1. It will then Open the project, warning may show about version and just click continue
 
 1. Wait for Editor to open
     * If question about Safe mode is shown select "Enter Safe Mode".
-    * If it does press exit safe mode in the top left corner 
+    * If you was in  does press exit safe mode in the top left corner 
 1. ThunderKit settings window should now show else its found:  
     ![Thunderkit](/assets/images/assetripper/thunderkit.png)  
     * When you have the thunderkit window open you can click on Show at startup to have it hidden as default.
