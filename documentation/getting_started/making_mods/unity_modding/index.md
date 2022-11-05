@@ -49,7 +49,7 @@ At writing 2021.3.1f1 is known to work
 Install [Git Client](https://git-scm.com/download/win)
 * After installing the Git Client, you will need to exit Unity and the Unity Hub.
 ### Steps to Import game Scripts
-1. Change version to use Thunderkit version. (Click on version in column and select the correct one) See [Thunderkit](#thunderkit) how to get it.
+1. Change version to use Thunderkit version. (Click on version in column and select the correct one) See [Thunderkit](#thunderkit) how to find what version to select.
 1. It will then Open the project, warning may show about version and just click continue
 
 1. Wait for Editor to open
