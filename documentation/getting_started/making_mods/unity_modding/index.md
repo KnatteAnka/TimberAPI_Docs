@@ -60,6 +60,7 @@ At writing 2021.3.1f1 is known to work
     * When you have the thunderkit window open you can click on Show at startup to have it hidden as default.
 1. Select thunderkit settings and browse for the timberborn.exe and press import  
 ![Thunderkit](/assets/images/assetripper/thunderkit_import.png)  
+    * If wrong unity version is used it will show an error in console what version it expect.
     
     
 
