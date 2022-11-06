@@ -41,7 +41,7 @@ At writing 2021.3.1f1 is known to work
 1. Select Archive and click download archive and find the versions from above and install those
 2. Install [Git Client](https://git-scm.com/download/win)
     * After installing the Git Client, you will need to exit Unity and the Unity Hub.
-1. Manual install of Bepinex in game Dir.  
+1. [Manual install](../../using_mods/manual_install.md) of Bepinex in game Dir.  
 
 ## Create Project
 1. Unpack MinimalModSetup content and rename folder to your liking
