@@ -72,16 +72,21 @@ This is done to get game file components.
 1. Wait for Editor to open, This may take some time
     * If question about Safe mode is shown select "Enter Safe Mode".  
     * If it does press exit safe mode in the top left corner 
-1. Try open Assets/StorageBox/StorageBox it should now show settings for the prefab example prefab name.
+1. When the Thunderkit window show verify that timberborn.exe is show for game path 
+    * Browse to file if not set.
+3.  press on Show at startup and then close thunderkit window.
+4. Try open Assets/StorageBox/StorageBox Asset (Blue box) it should now show settings for the prefab example Component: Prefab(Script) Prefab Name: StorageBox.
     * If it does not redo the [Thunderkit](#steps-to-import-game-scripts)
-1. Up top you have shortcuts to action and select mod to execute  
-    If none is shown:  
+5. Up top you have shortcuts to action and select mod to execute  
+    If no alternetive is shown when clicked on the list:  
 ![](/assets/images/unity_selectmod.png)
     1. Open Assets/Rebuild and Launch and uncheck and check Quick Access
     1. Any mods not showing up open there Manifests and uncheck and check Quick Access
     
-1. You should now be able to select the Action Rebuild and a mod in the dropdown list and press Execute to launch the game with that mod.
+1. You should now be able to select the Action "Rebuild and Launch" and Mod: "StorageBox" in the dropdown list 
+2. Press Execute to launch the game with That mod.
            
+---           
 
 ## Update or add mod to Unity launch
 1. Download mod to update or add
