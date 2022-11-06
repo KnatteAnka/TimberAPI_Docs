@@ -39,15 +39,16 @@ At writing 2021.3.1f1 is known to work
 1. Install [UnityHub](https://unity3d.com/get-unity/download)
 1. Open Unityhub/Installs and Click "Install Editor"
 1. Select Archive and click download archive and find the versions from above and install those
+2. Install [Git Client](https://git-scm.com/download/win)
+    * After installing the Git Client, you will need to exit Unity and the Unity Hub.
+1. Manual install of Bepinex in game Dir.  
 
 ## Create Project
 1. Unpack MinimalModSetup content and rename folder to your liking
 1. Open Unityhub/Projects and press Open and select folder from above
 
 ## Thunderkit setup:
-### Preperation 
-Install [Git Client](https://git-scm.com/download/win)
-* After installing the Git Client, you will need to exit Unity and the Unity Hub.
+This is done to get game file components.
 ### Steps to Import game Scripts
 1. Change version to use Thunderkit version. (Click on version in column and select the correct one) See [Thunderkit](#thunderkit) how to find what version to select.
 1. It will then Open the project, warning may show about version and just click continue
@@ -55,11 +56,13 @@ Install [Git Client](https://git-scm.com/download/win)
 1. Wait for Editor to open
     * If question about Safe mode is shown select "Enter Safe Mode".
     * If you was in  does press exit safe mode in the top left corner 
+    * and Exit Anyway
 1. ThunderKit settings window should now show else its found:  
     ![Thunderkit](/assets/images/assetripper/thunderkit.png)  
     * When you have the thunderkit window open you can click on Show at startup to have it hidden as default.
 1. Select thunderkit settings and browse for the timberborn.exe and press import  
 ![Thunderkit](/assets/images/assetripper/thunderkit_import.png)  
+    * If wrong unity version is used it will show an error in console what version it expect.
     
     
 
