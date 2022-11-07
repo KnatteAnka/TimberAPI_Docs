@@ -35,6 +35,7 @@ At writing 2021.3.1f1 is known to work
 
 
 ## Instalation
+Thunderkit that this guide is built on is tested on Windows installation and may work on linux but Mac is not supported!
 1. Download Zip [MinimalModSetup](https://github.com/KnatteAnka/MinimalModSetup)  
 1. Install [UnityHub](https://unity3d.com/get-unity/download)
 1. Open Unityhub/Installs and Click "Install Editor"
