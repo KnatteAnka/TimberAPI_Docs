@@ -27,10 +27,13 @@ parent: Making Mods
 ### Thunderkit
 To find the right version, find the Timberborn.exe and look at propeties for it.   
 The Filevesion shows which version of Unity Thunderkit will need.   
-At writing 2022.1.6f1 is known to work
+At writing these version is know to work to import timberborn files
+2022.1.6f1 For 0.2.9.1 (Stable)
+2022.1.22F1 For 0.3.1.0 (Experimental)
+
 
 ### Mod unity version
-This will depend on what version timberAPI uses.  
+Version needed to build Mods depend on what version TimberAPI uses or Magic.  
 At writing 2021.3.1f1 is known to work
 
 
@@ -49,7 +52,8 @@ Thunderkit that this guide is built on is tested on Windows installation and may
 1. Open Unityhub/Projects and press Open and select folder from above
 
 ## Thunderkit setup:
-This is done to get game file components.
+This is done to get game file components.  
+More info about Thunderkit can be found at its [github](https://github.com/PassivePicasso/ThunderKit) page.
 ### Steps to Import game Scripts
 1. Change version to use Thunderkit version. (Click on version in column and select the correct one) See [Thunderkit](#thunderkit) how to find what version to select.
 1. It will then Open the project, warning may show about version and just click continue
@@ -63,7 +67,7 @@ This is done to get game file components.
     * When you have the thunderkit window open you can click on Show at startup to have it hidden as default.
 1. Select thunderkit settings and browse for the timberborn.exe and press import  
 ![Thunderkit](/assets/images/assetripper/thunderkit_import.png)  
-    * If wrong unity version is used it will show an error in console what version it expect.
+    * If wrong unity version is used it will show an error in console what version of unity it expect.
     
     
 
@@ -87,7 +91,60 @@ This is done to get game file components.
 1. You should now be able to select the Action "Rebuild and Launch" and Mod: "StorageBox" in the dropdown list 
 2. Press Execute to launch the game with That mod.
            
----           
+---     
+
+# File Explanations:
+
+### Main Folder project:
+![Main Folder Project](../../../../assets/images/unityguide/MainFolder.png)  
+* Plugin: Folder that has plugin used to compile Scripts and code used by mods, nothing to change.  
+* StorageBox: Example mod folder.  
+* ThunderkitSettings: Settings for Thunderkit, change with GUI instead.  
+* Deploy: Pipeline to copy stuff declared in mod manifest, nothing to change.  
+* Rebuild and Launch: Pipeline to run other pipelines, May need to toggle Quick access if not show in the dropdown list for action.  
+* Stage: Pipeline to Compile Asset bundle, nothing to change.   
+* SteamBepInExLaunch: Pipeline that runs the game, nothing to change.  
+
+### Mod Base folder:
+![Mod Base folder](../../../../assets/images/unityguide/ModFolder.png)
+* Blender: Folder that holds Blender file used.
+* Matererial: Folder for any custom material, General folder for all mods may be used instead.
+* Model: Folder with exported FBX models to use.
+* Specification: Folder that holds specifications, Declared in manifest which to use.
+* Spirtes: Folder with Sprites to use, May have a Subfolder named CategorySprites for [Categorybutton Mod.](https://mod.io/g/timberborn/m/category-button)  
+* Static Files: see below what it holds.
+* Mod.json: File that declare info for TimberAPI See: [Mod.json](../mod_json/index.md) for more info.
+* Plugin.cs: Example of Script, Commented out from start.
+* StorageBox Assembly Definition Asset: Holds what Dlls to use when building Plugin.cs
+* StorageBox Manifest: Declare what to include and use when building the Mod.
+* StorageBox Prefab: Building that the mod adds. can be placed in subfolder's to sort them.
+
+
+### Mod Manifest:
+![Mod Manifest](../../../../assets/images/unityguide/ModManifest.png)
+
+0. Manifest identity: Name of mod and info of the mod
+1. Assembly Definition: Declare what Script Assembly Definition to use.
+2. Files: Copy command to copy selected files to Staging Paths
+3. Asset Bundle Definitions: Declare what Asset Bundles to add and what prefabs it contain
+4. Same as 2 but for Thunderstorepackage files, Will need to draw in correct ones when Duplicating a mod.  
+5. same as 2 but for for any Specifications to include, Will need to draw in correct ones when Duplicating a mod. 
+
+* More "Files" Manifest Datums may be added to add folders to copy.   
+Example add CategorySprites to assets folder for both ManifestPluginStaging and Thunderstorepackage  
+
+### StaticFiles:
+* Images: Images to use with Thunderstore readme
+* lang: Folder that holds all Lang files. Minimum req enUS.txt file with text strings to use to not give warning.
+* ThunderstorePackage: Contains files for ThunderstorePackage.
+
+### ThunderstorePackage:
+
+* icon.png: 256x256 image as a Icon for the mod
+* manifest.json: File with what name of mod and what version it has and if any dependencies.
+* README.md: MD File that is shown on the thunderstore page.
+
+---
 
 ## Update or add mod to Unity launch
 1. Download mod to update or add
@@ -102,6 +159,7 @@ This can be used to transfer assets from Assetripped game to your mods project
 []()
 1. Select any amount of assets and right click and select Export package
 2. To import it in the next one right click in project view and select Import package/Custom package
+
 
 ## Export/Import FBX files
 This is used if you want to export to blender or other cad programs.  
