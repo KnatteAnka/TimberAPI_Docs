@@ -27,9 +27,9 @@ parent: Making Mods
 ### Thunderkit
 To find the right version, find the Timberborn.exe and look at propeties for it.   
 The Filevesion shows which version of Unity Thunderkit will need.   
-At writing these version is know to work to import timberborn files
-2022.1.6f1 For 0.2.9.1 (Stable)
-2022.1.22F1 For 0.3.1.0 (Experimental)
+At writing these version is know to work to import timberborn files  
+2022.1.6f1 For 0.2.9.1 (Stable)  
+2022.1.22F1 For 0.3.1.0 (Experimental)  
 
 
 ### Mod unity version
