@@ -73,16 +73,17 @@ More info about Thunderkit can be found at its [github](https://github.com/Passi
 
 ## Modding Setup:   
 1. Close the project and change version to modding version as described above.
-1. It will then Open the project, warning may show about version and just click continue
-1. Wait for Editor to open, This may take some time
+2. In UnityHub press ... and add this command line "-disable-assembly-updater"
+3. It will then Open the project, warning may show about version and just click continue
+4. Wait for Editor to open, This may take some time
     * If question about Safe mode is shown select "Enter Safe Mode".  
     * If it does press exit safe mode in the top left corner 
-1. When the Thunderkit window show verify that timberborn.exe is show for game path 
+5. When the Thunderkit window show verify that timberborn.exe is show for game path 
     * Browse to file if not set.
-3.  press on Show at startup and then close thunderkit window.
-4. Try open Assets/StorageBox/StorageBox Asset (Blue box) it should now show settings for the prefab example Component: Prefab(Script) Prefab Name: StorageBox.
+6.  press on Show at startup and then close thunderkit window.
+7. Try open Assets/StorageBox/StorageBox Asset (Blue box) it should now show settings for the prefab example Component: Prefab(Script) Prefab Name: StorageBox.
     * If it does not redo the [Thunderkit](#steps-to-import-game-scripts)
-5. Up top you have shortcuts to action and select mod to execute  
+8. Up top you have shortcuts to action and select mod to execute  
     If no alternetive is shown when clicked on the list:  
 ![](/assets/images/unity_selectmod.png)
     1. Open Assets/Rebuild and Launch and uncheck and check Quick Access
@@ -121,7 +122,8 @@ More info about Thunderkit can be found at its [github](https://github.com/Passi
 
 
 ### Mod Manifest:
-![Mod Manifest](../../../../assets/images/unityguide/ModManifest.png)
+When Duplicating a mod to create a new one you will need to bind items to correct files and folders in here.  
+![Mod Manifest](../../../../assets/images/unityguide/ModManifest.png)  
 
 0. Manifest identity: Name of mod and info of the mod
 1. Assembly Definition: Declare what Script Assembly Definition to use.
