@@ -111,7 +111,7 @@ More info about Thunderkit can be found at its [github](https://github.com/Passi
 * Blender: Folder that holds Blender file used.
 * Matererial: Folder for any custom material, General folder for all mods may be used instead.
 * Model: Folder with exported FBX models to use.
-* Specification: Folder that holds specifications, Declared in manifest which to use.
+* Specification: Folder that holds specifications, Declared in manifest which files to inlcude in the created mod.
 * Spirtes: Folder with Sprites to use, May have a Subfolder named CategorySprites for [Categorybutton Mod.](https://mod.io/g/timberborn/m/category-button)  
 * Static Files: see below what it holds.
 * Mod.json: File that declare info for TimberAPI See: [Mod.json](../mod_json/index.md) for more info.
@@ -128,7 +128,8 @@ When Duplicating a mod to create a new one you will need to bind items to correc
 0. Manifest identity: Name of mod and info of the mod
 1. Assembly Definition: Declare what Script Assembly Definition to use.
 2. Files: Copy command to copy selected files to Staging Paths
-3. Asset Bundle Definitions: Declare what Asset Bundles to add and what prefabs it contain
+3. Asset Bundle Definitions: Declare what Asset Bundles to add and what prefabs it contain.
+Add any new Prefabs here.
 4. Same as 2 but for Thunderstorepackage files, Will need to draw in correct ones when Duplicating a mod.  
 5. same as 2 but for for any Specifications to include, Will need to draw in correct ones when Duplicating a mod. 
 
