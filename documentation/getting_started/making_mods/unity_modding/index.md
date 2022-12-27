@@ -21,32 +21,36 @@ parent: Making Mods
     It may Crash and need to be force closed and opened again and thats normal when changing version or adding alot of new assets or settings.  
     Meaning if its stuck importing on one package over 1-2 min then shut it down with taskmanager.  
     ![Import Window](/assets/images/Unity_Import.png)  
+    Happens less offen if in UnityHub press ... and add this command line "-disable-assembly-updater" to project
 
+---
 ## Find version of unity
 
 ### Thunderkit
-To find the right version, find the Timberborn.exe and look at propeties for it.   
-The Filevesion shows which version of Unity Thunderkit will need.   
-At writing these version is know to work to import timberborn files  
-2022.1.6f1 For 0.2.9.1 (Stable)  
-2022.1.22F1 For 0.3.1.0 (Experimental)  
-
+To find the right version, find the Timberborn.exe and look at propeties and details for it.   
+The Product version shows which version of Unity Thunderkit will need.   
+![Properties](../../../../assets/images/unityguide/Timberborn_Product_version.png)
 
 ### Mod unity version
-Version needed to build Mods depend on what version TimberAPI uses or Magic.  
-At writing 2021.3.1f1 is known to work
+Version needed to build Mods is limited by bug in Thunderkit so it cant build with version 2022
+At writing 2021.3.15f1 is known to work
+But any 2021 version should work.
 
 
 ## Instalation
 Thunderkit that this guide is built on is tested on Windows installation and may work on linux but Mac is not supported!
 1. Download Zip [MinimalModSetup](https://github.com/KnatteAnka/MinimalModSetup)  
 1. Install [UnityHub](https://unity3d.com/get-unity/download)
-1. Open Unityhub/Installs and Click "Install Editor"
-1. Select Archive and click download archive and find the versions from above and install those
+1. Open Unityhub/Installs and Click "Install Editor"  
+![Install Editor](../../../../assets/images/unityguide/Install_UnityEditor.png)
+1. Select Archive and click download archive and find the versions from above and install those  
+![Download archive](../../../../assets/images/unityguide/Install_UnityEditor_downloadarchive.png)
 2. Install [Git Client](https://git-scm.com/download/win)
     * After installing the Git Client, you will need to exit Unity and the Unity Hub.
-1. [Manual install](../../using_mods/manual_install.md) of Bepinex in game Dir.  
-
+1. [Manual install](https://mod.io/g/timberborn/r/how-to-install-mods) of Doorstop and winhttp.dll from Bepinex in game Dir.   
+    Full Install can be done but not needed. 
+    
+---
 ## Create Project
 1. Unpack MinimalModSetup content and rename folder to your liking
 1. Open Unityhub/Projects and press Open and select folder from above
@@ -69,7 +73,7 @@ More info about Thunderkit can be found at its [github](https://github.com/Passi
 ![Thunderkit](/assets/images/assetripper/thunderkit_import.png)  
     * If wrong unity version is used it will show an error in console what version of unity it expect.
     
-    
+---    
 
 ## Modding Setup:   
 1. Close the project and change version to modding version as described above.
@@ -94,7 +98,14 @@ More info about Thunderkit can be found at its [github](https://github.com/Passi
            
 ---     
 
-# File Explanations:
+# Hurray you Should now have a working mod
+Next step is offen to check how the base game has done a building to use as base  
+and add that building to Faction specification and to Manifest Asset declaration  
+Also checkout tips and tricks below
+
+---
+
+## File Explanations:
 
 ### Main Folder project:
 ![Main Folder Project](../../../../assets/images/unityguide/MainFolder.png)  
@@ -131,7 +142,7 @@ When Duplicating a mod to create a new one you will need to bind items to correc
 3. Asset Bundle Definitions: Declare what Asset Bundles to add and what prefabs it contain.
 Add any new Prefabs here.
 4. Same as 2 but for Thunderstorepackage files, Will need to draw in correct ones when Duplicating a mod.  
-5. same as 2 but for for any Specifications to include, Will need to draw in correct ones when Duplicating a mod. 
+5. same as 2 but for for any Specifications to include, Will need to draw in correct ones when Duplicating a mod or adding new Specifications. 
 
 * More "Files" Manifest Datums may be added to add folders to copy.   
 Example add CategorySprites to assets folder for both ManifestPluginStaging and Thunderstorepackage  
