@@ -39,7 +39,9 @@ But any 2021 version should work.
 
 ## Instalation
 Thunderkit that this guide is built on is tested on Windows installation and may work on linux but Mac is not supported!
-1. Download Zip [MinimalModSetup](https://github.com/KnatteAnka/MinimalModSetup)  
+1. Download Zip [MinimalModSetup](https://github.com/KnatteAnka/MinimalModSetup)
+    - This is a Base for projects that include installation of Bepinex,TimberAPI, Thunderkit and Pipelines to help build mods.
+    - It also contain a basic mod to build and verify the setup.
 1. Install [UnityHub](https://unity3d.com/get-unity/download)
 1. Open Unityhub/Installs and Click "Install Editor"  
 ![Install Editor](../../../../assets/images/unityguide/Install_UnityEditor.png)
