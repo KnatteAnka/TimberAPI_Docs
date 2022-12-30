@@ -18,10 +18,11 @@ parent: Making Mods
 ## Prerequisites
 - Installed Unity Editor
 - Downloaded GUI version from: [https://github.com/AssetRipper/AssetRipper/releases](https://github.com/AssetRipper/AssetRipper/releases)   
-    **Known working version: 0.2.1.1**
+    **Known working version: 0.3.0.2**
 - Folder where it can Export files to.
     -   Note it will replace/remove all files in the folder!
-- Separate Unity project for AssetRipper.    
+- Separate Unity project for AssetRipper.
+- Installed Thunderkit in above Project [Thunderkit installation](https://youtu.be/AKV8TchzX0s)   
 
 ## Instruction:  
 1. Open Asset ripper  
