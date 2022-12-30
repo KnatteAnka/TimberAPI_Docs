@@ -34,7 +34,7 @@ parent: Making Mods
 ![Export Files](/assets/images/assetripper/export_all.png)
 1. Open Exported files when export is done.  
 1. go to /Timberborn/ExportedProject and Rename Asset folder to Timberborn.  
-1. Open renamed folder and Select MonoScript folder and delete it.
+1. Open renamed folder and Select "Plugins" folder and delete it.
     - Can stop here if you just want to look at text files.  
 1. Copy Renamed folder to Unity Projects Asset folder. 
 1. Start Unity Editor.
