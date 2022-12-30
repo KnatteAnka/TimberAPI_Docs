@@ -22,7 +22,8 @@ parent: Making Mods
 - Folder where it can Export files to.
     -   Note it will replace/remove all files in the folder!
 - Separate Unity project for AssetRipper.
-- Installed Thunderkit in above Project [Thunderkit installation](https://youtu.be/AKV8TchzX0s)   
+    - Installed Thunderkit in above Project [Thunderkit installation](https://youtu.be/AKV8TchzX0s)   
+    - In UnityHub press ... and add this command line "-disable-assembly-updater"
 
 ## Instruction:  
 1. Open Asset ripper  
@@ -37,6 +38,7 @@ parent: Making Mods
 1. Open renamed folder and Select "Plugins" folder and delete it.
     - Can stop here if you just want to look at text files.  
 1. Copy Renamed folder to Unity Projects Asset folder. 
+
 1. Start Unity Editor.
     - it may crash or freeze with so many files to import then force close the editor.  
 1. Open Thunderkit settings.  
