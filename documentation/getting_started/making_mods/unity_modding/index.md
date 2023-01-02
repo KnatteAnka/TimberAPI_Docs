@@ -32,8 +32,8 @@ The Product version shows which version of Unity Thunderkit will need.
 ![Properties](../../../../assets/images/unityguide/Timberborn_Product_version.png)
 
 ### Mod unity version
-Version needed to build Mods is limited by bug in Thunderkit so it cant build with version 2022
-At writing 2021.3.15f1 is known to work
+Version needed to build Mods is limited by bug in Thunderkit so it cant build with version 2022  
+At writing 2021.3.15f1 is known to work  
 But any 2021 version should work.
 
 
@@ -73,7 +73,8 @@ More info about Thunderkit can be found at its [github](https://github.com/Passi
     * When you have the thunderkit window open you can click on Show at startup to have it hidden as default.
 1. Select thunderkit settings and browse for the timberborn.exe and press import  
 ![Thunderkit](/assets/images/assetripper/thunderkit_import.png)  
-    * If wrong unity version is used it will show an error in console what version of unity it expect.
+    * If wrong unity editor version is used it will show an error in console what version of unity player game is and what version it expect unity editor to be. See [Installation](#instalation) for info how to install new editor.    
+    ![Wrong version used](../../../../assets/images/unityguide/Thunderkit_Wrong_Version.png)
     
 ---    
 
