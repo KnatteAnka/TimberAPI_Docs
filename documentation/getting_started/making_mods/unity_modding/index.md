@@ -79,26 +79,27 @@ More info about Thunderkit can be found at its [github](https://github.com/Passi
 ---    
 
 ## Modding Setup:   
-1. Close the project and change version to modding version as described above.
+1. Close the project 
 2. In UnityHub press ... and add this command line "-disable-assembly-updater"
-3. It will then Open the project, warning may show about version and just click continue
-4. Wait for Editor to open, This may take some time
+3. Change version to modding version as described above.
+4. It will then Open the project, warning may show about version and just click continue
+5. Wait for Editor to open, This may take some time
     * If question about Safe mode is shown select "Enter Safe Mode".  
     * If it does press exit safe mode in the top left corner 
-5. When the Thunderkit window show verify that timberborn.exe is show for game path 
+6. When the Thunderkit window show verify that timberborn.exe is show for game path 
     * Browse to file if not set.
-6.  press on Show at startup and then close thunderkit window.
-7. Try open Assets/StorageBox/StorageBox Asset (Blue box) it should now show settings for the prefab example Component: Prefab(Script) Prefab Name: StorageBox.
+7.  press on Show at startup and then close thunderkit window.
+8. Try open Assets/StorageBox/StorageBox Asset (Blue box) it should now show settings for the prefab example Component: Prefab(Script) Prefab Name: StorageBox.
     * If it does not redo the [Thunderkit](#steps-to-import-game-scripts)
-8. Up top you have shortcuts to action and select mod to execute  
+9. Up top you have shortcuts to action and select mod to execute  
     If no alternetive is shown when clicked on the list:  
 ![](/assets/images/unity_selectmod.png)
     1. Open Assets/Rebuild and Launch and uncheck and check Quick Access
     1. Any mods not showing up open there Manifests and uncheck and check Quick Access
     
-1. You should now be able to select the Action "Rebuild and Launch" and Mod: "StorageBox" in the dropdown list 
-2. Press Execute to launch the game with That mod.
-           
+10. You should now be able to select the Action "C_Rebuild and Launch" and Mod: "StorageBox" in the dropdown list 
+11. Press Execute to launch the game with That mod.
+                      
 ---     
 
 # Hurray you Should now have a working mod
@@ -107,61 +108,97 @@ and add that building to Faction specification and to Manifest Asset declaration
 Also checkout tips and tricks below
 
 ---
+# Action Explanations:
+| Action:              | What it does              | Is Assets Compressed |
+|----------------------|---------------------------|----------------------|
+| C_Rebuild_And_Launch | Build mod and launch game | Yes                  |
+| Rebuild_And_Launch   | Build mod and launch game | No                   |
+| Build_Mod.io_Package | Build mod                 | Yes                  |
 
-## File Explanations:
+---
+# File Explanations:
+
+## If no "What/When to change" is set then it should not need to be changed
 
 ### Main Folder project:
 ![Main Folder Project](../../../../assets/images/unityguide/MainFolder.png)  
-* Plugin: Folder that has plugin used to compile Scripts and code used by mods, nothing to change.  
-* StorageBox: Example mod folder.  
-* ThunderkitSettings: Settings for Thunderkit, change with GUI instead.  
-* Deploy: Pipeline to copy stuff declared in mod manifest, nothing to change.  
-* Rebuild and Launch: Pipeline to run other pipelines, May need to toggle Quick access if not show in the dropdown list for action.  
-* Stage: Pipeline to Compile Asset bundle, nothing to change.   
-* SteamBepInExLaunch: Pipeline that runs the game, nothing to change.  
+| File/Folder:    |What it does | What/when to change
+|----------------------|-------|-------------|
+| Plugin               | Folder that has plugin used to compile Scripts and code used by mods   | 
+| StorageBox           | Example mod folder.                                                    | Rename or Copy when doing a new mod.
+| ThunderkitSettings   | Settings for Thunderkit, change with GUI instead.                      | 
+| Build_Mod.io_Package | Action to Build mod                                                    | 
+| Deploy               | Pipeline to copy stuff declared in mod manifest                        | Can enable Pipeline 6 to delete .meta and Old Zip files Element 1 is amount of days to keep old zips.
+| Rebuild and Launch   | Pipeline to run other pipelines                                        | May need to toggle Quick access if not show in the dropdown list for action.  
+| Stage                | Pipeline to Compile Asset bundle                                       | 
+| SteamBepInExLaunch   | Pipeline that runs the game                                            | 
 
 ### Mod Base folder:
 ![Mod Base folder](../../../../assets/images/unityguide/ModFolder.png)
-* Blender: Folder that holds Blender file used.
-* Matererial: Folder for any custom material, General folder for all mods may be used instead.
-* Model: Folder with exported FBX models to use.
-* Specification: Folder that holds specifications, Declared in manifest which files to inlcude in the created mod.
-* Spirtes: Folder with Sprites to use, May have a Subfolder named CategorySprites for [Categorybutton Mod.](https://mod.io/g/timberborn/m/category-button)  
-* Static Files: see below what it holds.
-* Mod.json: File that declare info for TimberAPI See: [Mod.json](../mod_json/index.md) for more info.
-* Plugin.cs: Example of Script, Commented out from start.
-* StorageBox Assembly Definition Asset: Holds what Dlls to use when building Plugin.cs
-* StorageBox Manifest: Declare what to include and use when building the Mod.
-* StorageBox Prefab: Building that the mod adds. can be placed in subfolder's to sort them.
+
+| File/Folder:    |What it does | What/when to change
+|----------------------|-------|-------------|
+| Blender       | Folder that holds Blender file used. |
+| Matererial    | Folder for any custom material, General folder for all mods may be used instead.
+| Model         | Folder with exported FBX models to use.
+| Specification | Folder that holds specifications, Declared in manifest which files to inlcude in the created mod.
+| Spirtes | Folder with Sprites to use, May have a Subfolder named CategorySprites for [Categorybutton Mod.](https://mod.io/g/timberborn/m/category-button)  
+| Static Files  | see below what it holds.
+| Mod.json | File that declare info for TimberAPI See: [Mod.json](../mod_json/index.md) for more info. | Changed when version changed and to rename mod and any ID used.
+| Plugin.cs | Example of Script, Commented out from start.
+| StorageBox Assembly Definition Asset | Holds what Dlls to use when building Plugin.cs | May need to add references to any imports that is used example TimberAPI.
+| StorageBox Manifest | Declare what to include and use when building the Mod. |new asset and Specification to be added to the game.
+| StorageBox Prefab |   Building that the mod adds. can be placed in subfolder's to sort them. | Change how the building behave.
 
 
 ### Mod Manifest:
-When Duplicating a mod to create a new one you will need to bind items to correct files and folders in here.  
+* When Duplicating a mod to create a new one you will need to bind items to correct files and folders in here.    
 ![Mod Manifest](../../../../assets/images/unityguide/ModManifest.png)  
 
-0. Manifest identity: Name of mod and info of the mod
-1. Assembly Definition: Declare what Script Assembly Definition to use.
-2. Files: Copy command to copy selected files to Staging Paths
-3. Asset Bundle Definitions: Declare what Asset Bundles to add and what prefabs it contain.
-Add any new Prefabs here.
-4. Same as 2 but for Thunderstorepackage files, Will need to draw in correct ones when Duplicating a mod.  
-5. same as 2 but for for any Specifications to include, Will need to draw in correct ones when Duplicating a mod or adding new Specifications. 
+| File/Folder:    |What it does | What/when to change
+|----------------------|-------|-------------|
+| 0 Manifest identity | Holds info about Mod,Version used by Zip | New name of the Mod, and version number changed
+| 1 Assembly Definition| Declare what Script Assembly Definition to use. |
+| 2 Files              | Copy command to copy selected files to Staging Paths|
+| 3 Asset Bundle Definitions| Declare what Asset Bundles to add and what prefabs it contain.|Change the AssetBundle name to change ID/ **This** /Prefab used by Specifications 
+| 3 Assets|Holds what assets to include in the mod| Add any new Prefabs here.
+| 5 Files | Copy command to copy for any Specifications to include | Will need to draw in correct ones when Duplicating a mod or adding new Specifications. 
 
 * More "Files" Manifest Datums may be added to add folders to copy.   
 Example add CategorySprites to assets folder for both ManifestPluginStaging and Thunderstorepackage  
 
 ### StaticFiles:
-* Images: Images to use with Thunderstore readme
-* lang: Folder that holds all Lang files. Minimum req enUS.txt file with text strings to use to not give warning.
-* ThunderstorePackage: Contains files for ThunderstorePackage.
+| File/Folder:    |What it does | What/when to change
+|----------------------|-------|-------------|
+| Images | Images to use with Thunderstore readme | Not used anymore
+| lang | Folder that holds all Lang files. | Minimum req enUS.txt file with text strings to use to not give warning.
+| ThunderstorePackage | Contains files for ThunderstorePackage. | Not used anymore
 
 ### ThunderstorePackage:
-
-* icon.png: 256x256 image as a Icon for the mod
-* manifest.json: File with what name of mod and what version it has and if any dependencies.
-* README.md: MD File that is shown on the thunderstore page.
+| File/Folder:    |What it does | What/when to change
+|----------------------|-------|-------------|
+| icon.png | 256x256 image as a Icon for the mod
+| manifest.json | File with what name of mod and what version it has and if any dependencies.
+| README.md | MD File that is shown on the thunderstore page.
 
 ---
+
+### BuildingSpecification:
+Tips and tricks:
+* Note naming of Specifications is important lower or upper case can matter
+* Inside Building Specification you have lines for each building to add to the game
+* Location is UniqueId(Found in Mod.io)/Asset Bundle name/Prefabname
+
+### Upload to Mod.io
+Before you upload you will need to 
+| What | Where |
+|------|------|
+| Change name of mod                            | Mod Manifest and mod.json
+| Change UniqueId to a Unique one per Mod       | Mod.json
+| Update if new Min game version or API version | Mod.json
+| Update Version                                | Mod.json
+* Under UnityProjectfolder/Thunderkit/Staging it will be created a Zip when a mod is built this is then uploaded to your mod at Mod.io
+
 
 ## Update or add mod to Unity launch
 1. Download mod to update or add
