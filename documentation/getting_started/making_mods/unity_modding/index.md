@@ -45,8 +45,9 @@ Thunderkit that this guide is built on is tested on Windows installation and may
 1. Install [UnityHub](https://unity3d.com/get-unity/download)
 1. Open Unityhub/Installs and Click "Install Editor"  
 ![Install Editor](../../../../assets/images/unityguide/Install_UnityEditor.png)
-1. Select Archive and click download archive and find the versions from above and install those  
+1. Select Archive and click download archive and install version noted in [Find version of unity](#find-version-of-unity)
 ![Download archive](../../../../assets/images/unityguide/Install_UnityEditor_downloadarchive.png)
+![Webpage](../../../../assets/images/unityguide/Install_UnityEditor_Webpage.png)
 2. Install [Git Client](https://git-scm.com/download/win)
     * After installing the Git Client, you will need to exit Unity and the Unity Hub.
 1. [Manual install](https://mod.io/g/timberborn/r/how-to-install-mods) of Doorstop and winhttp.dll from Bepinex in game Dir.   
