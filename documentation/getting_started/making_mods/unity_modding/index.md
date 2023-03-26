@@ -15,6 +15,9 @@ parent: Making Mods
 1. TOC
 {:toc}
 
+## Video Guide:
+This guide also exist as a 22min Video guide: [Timberborn Modding: 1 MinimalMod Setup](https://youtu.be/4fu6ZETCREg)
+
 ## Common Problem:
 * Import window:  
     When this window is working it may take some time.  
