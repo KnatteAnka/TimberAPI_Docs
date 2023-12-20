@@ -29,15 +29,13 @@ This guide also exist as a 22min Video guide: [Timberborn Modding: 1 MinimalMod 
 ---
 ## Find version of unity
 
-### Thunderkit
 To find the right version, find the Timberborn.exe and look at propeties and details for it.   
 The Product version shows which version of Unity Thunderkit will need.   
 ![Properties](../../../../assets/images/unityguide/Timberborn_Product_version.png)
 
-### Mod unity version
-Version needed to build Mods is limited by bug in Thunderkit so it cant build with version 2022  
-At writing 2021.3.15f1 is known to work  
-But any 2021 version should work.
+Older versions of modding required multiple versions for Import and building in thunderkit/unity but with newer thunderkit that is no more.
+
+
 
 
 ## Instalation
