@@ -39,10 +39,11 @@ Older versions of modding required multiple versions for Import and building in 
 
 
 ## Instalation
-Thunderkit that this guide is built on is tested on Windows installation and may work on linux but Mac is not supported!
+Thunderkit that this guide is built on is tested on Windows installation and may work on linux and Mac is not tested!
 1. Download Zip [MinimalModSetup](https://github.com/KnatteAnka/MinimalModSetup)
     - This is a Base for projects that include installation of Bepinex,TimberAPI, Thunderkit and Pipelines to help build mods.
     - It also contain a basic mod to build and verify the setup.
+1. Open the folder Assets and remove the Plugin folder for now.
 1. Install [UnityHub](https://unity3d.com/get-unity/download)
 1. Open Unityhub/Installs and Click "Install Editor"  
 ![Install Editor](../../../../assets/images/unityguide/Install_UnityEditor.png)
@@ -77,14 +78,15 @@ More info about Thunderkit can be found at its [github](https://github.com/Passi
 ![Thunderkit](/assets/images/assetripper/thunderkit_import.png)  
     * If wrong unity editor version is used it will show an error in console what version of unity player game is and what version it expect unity editor to be. See [Installation](#instalation) for info how to install new editor.    
     ![Wrong version used](../../../../assets/images/unityguide/Thunderkit_Wrong_Version.png)
-    
+
+* If you need to update Thunderkit all scripts compile or you have to be moved out or unity will fail to update correctly and break your setup!
+* Meaning no script errors in the logs is allowed then.
 ---    
 
 ## Modding Setup:   
 1. Close the project 
 2. In UnityHub press ... and add this command line "-disable-assembly-updater"
-3. Change version to modding version as described above.
-4. It will then Open the project, warning may show about version and just click continue
+3. Open the project, if changeing versions, warning message may show about version and just click continue
 5. Wait for Editor to open, This may take some time
     * If question about Safe mode is shown select "Enter Safe Mode".  
     * If it does press exit safe mode in the top left corner 
@@ -93,6 +95,7 @@ More info about Thunderkit can be found at its [github](https://github.com/Passi
 7.  press on Show at startup and then close thunderkit window.
 8. Try open Assets/StorageBox/StorageBox Asset (Blue box) it should now show settings for the prefab example Component: Prefab(Script) Prefab Name: StorageBox.
     * If it does not redo the [Thunderkit](#steps-to-import-game-scripts)
+9. Now unzip the removed plugins folder from before.
 9. Up top you have shortcuts to action and select mod to execute  
     If no alternetive is shown when clicked on the list:  
 ![](/assets/images/unity_selectmod.png)
