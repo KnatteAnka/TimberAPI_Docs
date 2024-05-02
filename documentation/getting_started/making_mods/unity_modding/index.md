@@ -95,7 +95,7 @@ More info about Thunderkit can be found at its [github](https://github.com/Passi
 7.  press on Show at startup and then close thunderkit window.
 8. Try open Assets/StorageBox/StorageBox Asset (Blue box) it should now show settings for the prefab example Component: Prefab(Script) Prefab Name: StorageBox.
     * If it does not redo the [Thunderkit](#steps-to-import-game-scripts)
-9. Now unzip the removed plugins folder from before.
+9. Now unzip the Assets/plugins.zip so it creates for example assets/plugins/ThunderkitModioUpload.
 9. Up top you have shortcuts to action and select mod to execute  
     If no alternetive is shown when clicked on the list:  
 ![](/assets/images/unity_selectmod.png)
