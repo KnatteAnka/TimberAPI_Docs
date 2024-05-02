@@ -64,7 +64,8 @@ Thunderkit that this guide is built on is tested on Windows installation and may
 This is done to get game file components.  
 More info about Thunderkit can be found at its [github](https://github.com/PassivePicasso/ThunderKit) page.
 ### Steps to Import game Scripts
-1. Change version to use Thunderkit version. (Click on version in column and select the correct one) See [Thunderkit](#thunderkit) how to find what version to select.
+1. in Unity Hub Press the ... for the project and press "add command line arguments" and add this command: "-disable-assembly-updater" and save
+2. Double click on the project and open it
 1. It will then Open the project, warning may show about version and just click continue
 
 1. Wait for Editor to open
